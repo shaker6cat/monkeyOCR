@@ -10,7 +10,7 @@ layout_config:
     name: layoutreader
 chat_config:
   weight_path: model_weight/Recognition
-  backend: lmdeploy # lmdeploy / vllm / transformers / api / lmdeploy_queue / vllm_queue / vllm_async
+  backend: transformers # lmdeploy / vllm / transformers / api / lmdeploy_queue / vllm_queue / vllm_async
   data_parallelism: 1 # for lmdeploy only (test)
   model_parallelism: 1 # for lmdeploy and vllm
   batch_size: 10 # active when using `transformers` as backend
